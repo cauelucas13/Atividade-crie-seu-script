@@ -1,0 +1,22 @@
+import pyautogui
+import webbrowser
+import time
+
+# URL do site a ser acessado
+url = "https://rachacuca.com.br/"
+
+# Abrir o navegador
+webbrowser.open(url)
+
+# Aguarde o navegador carregar
+time.sleep(5)
+
+# Realizar uma pesquisa (neste caso, pesquisando por um jogo)
+pyautogui.typewrite("Nome do Jogo")
+pyautogui.press('enter')
+
+# Aguarde algum tempo para ver os resultados
+time.sleep(5)
+
+# Feche o navegador (opcional)
+pyautogui.hotkey('ctrl', 'w')
